@@ -6,11 +6,12 @@ Then change the code so that the turtle has a different image ( look in the 'ima
 directory ) and moves to the corners of the screen in a square pattern. 
 """
 
-import turtle as turtle
+import turtle
+from pathlib import Path
 
-def set_turtle_image(turtle, image_name)
-    from pathlib import Path
-    image_dir = Path(__file__).parent.parent / images
+def set_turtle_image(turtle, image_name):
+    
+    image_dir = Path(__file__).parent.parent / "images"
     image_path = str(image_dir / image_name)
 
     screen = turtle.getscreen()
@@ -22,7 +23,7 @@ screen.setup(width=600, height=600)
 
 t = turtle.Turtle()
 
-set_turtle_image(t, lessons/10_Turtles/images/emoji2.png)
+set_turtle_image(t, "leaguebot_bolt.gif")
 
 t.penup()
 t.speed(3)
