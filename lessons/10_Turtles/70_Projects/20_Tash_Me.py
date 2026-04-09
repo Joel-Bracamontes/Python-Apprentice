@@ -9,29 +9,32 @@ Write a program that:
 Hint: See 08a_More Turtle Programs, section 'Change the Background Image' and
 'Change the Turtle Shape'
 """
-import turtle as turtle
 import turtle
-from PIL import Image
-from pathlib import Path
 
-def resize_gif(image_path, scale=0.5):
-    """Resize a GIF and save it as a new file."""
-    img = Image.open(image_path)
-    new_size = (int(img.width * scale), int(img.height * scale))
-    img = img.resize(new_size, Image.LANCZOS)
-    resized_path = str(image_path).replace(".gif", "_resized.gif")
-    img.save(resized_path)
-    return resized_path
+def set_background_image(window, image_name):
+    """Set the background image of the turtle window to the image with the given name."""
 
-def set_turtle_image(t, image_name, scale=0.5):
-    """Set the turtle's shape to a resized custom image."""
+    from pathlib import Path
+    from PIL import Image
+
     image_dir = Path(__file__).parent.parent / "images"
     image_path = str(image_dir / image_name)
-    resized_path = resize_gif(image_path, scale=scale)
 
-    screen = t.getscreen()
-    screen.addshape(resized_path)
-    t.shape(resized_path)
+    image= Image.open(image_path)
+        
+    window.setup(image.width, image.height, startx=0, starty=0)
+    window.bgpic(image_path)
+
+def set_turtle_image(turtle, image_name):
+    """Set the turtle's shape to a custom image."""
+
+    from pathlib import Path
+    image_dir = Path(__file__).parent.parent / "images"
+    image_path = str(image_dir / image_name)
+
+    screen = turtle.getscreen()
+    screen.addshape(image_path)
+    turtle.shape(image_path)
 
 # Set up the screen
 screen = turtle.Screen()
@@ -39,6 +42,7 @@ screen.setup(width=600, height=600)
 
 # Create a turtle and set its shape to the custom GIF
 t = turtle.Turtle()
-set_turtle_image(t, "leaguebot_bolt.gif", scale=0.5)  # change scale here
+set_turtle_image(t, "pikachu.gif")
+set_background_image(screen, "emoji.png") # Set the background image of the screen
 
 turtle.exitonclick()
