@@ -33,7 +33,7 @@ t.width(2)
 
 t.speed(0) 
 
-for i in range(5):
+for i in range(360):
     t.pencolor(getNextColor(i))
 
     t.fillcolor(getNextColor(i))
@@ -44,7 +44,7 @@ for i in range(5):
 
     t.forward(20) 
 
-    t.left(360/5) 
+    t.left(360/360) 
 
     t.forward(flameSize) 
 
