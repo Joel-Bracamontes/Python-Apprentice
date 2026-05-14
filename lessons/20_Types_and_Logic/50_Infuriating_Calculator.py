@@ -19,6 +19,9 @@ For the number, you can ask for a float or an integer with
 simpledialog.askfloat() or simpledialog.askinteger(), and for the math operation
 you can ask for a string with simpledialog.askstring().
 """
+number1 = 111
+number2 = 4
+operation = "111/4"
 
 # Import the required modules
 

@@ -46,13 +46,13 @@ if age <= 1:
     messagebox.showinfo('What you are', "You are a baby.")
 elif age <= 3:
     messagebox.showinfo('What you are', "You are a toddler.")
-elif age <= 12:
+elif age <= 10:
     messagebox.showinfo('What you are', "You are a child.")
-elif age <= 14:
+elif age <= 13:
     messagebox.showinfo('What you are', "You are a Pre-teen.")
 elif age <= 19:
     messagebox.showinfo('What you are', "You are a teen.")
-elif age <= 64:
+elif age <= 59:
     messagebox.showinfo('What you are', "You are an adult.")
 else:
     messagebox.showinfo('What you are', "You are a senior.")

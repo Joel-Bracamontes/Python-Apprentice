@@ -41,6 +41,9 @@ def ask_integer(prompt):
             print("Please enter a valid number!")
 
 # Pick the random number
+n = random.randint(1, 100)
+while n % 7 == 0:
+    n = random.randint(1, 100)
 
 # In your loop:
 
