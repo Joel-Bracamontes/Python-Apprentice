@@ -9,20 +9,17 @@ hint: all of your lists should have the same number of elements.
 Review the ' Using Lists' section of the previous lesson if you need 
 more help
 """
-
-import turtle                           # Tell Python we want to work with the turtle
+import turtle                          # Tell Python we want to work with the turtle
 turtle.setup(600,600,0,0)               # Set the size of the window
-
 tina = turtle.Turtle()                  # Create a turtle named tina
-
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
 tina.speed(200000)                           # Make the turtle move as fast, but not too fast. 
-
-for i in range(1000000):
+for i in range(375):
+    tina.goto(0,0)
     tina.forward(100)
-    tina.left(121)
+    tina.left(10)
     tina.color('red')
     tina.forward(101)
-    tina.left(120)
+    tina.left(9)
 
 turtle.exitonclick()  
