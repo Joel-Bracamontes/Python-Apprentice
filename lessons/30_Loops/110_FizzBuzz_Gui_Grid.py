@@ -28,19 +28,28 @@ HINT: You can use % and // to get the first and last digit of a number,
 or you can convert the number to a string and iterate over the digits
 """
 
-from guizero import App, Box, Text
+from guizero import App, Text
 
 app = App("Numbers Grid", layout="grid")
 
-# Create a 10x10 grid using nested loops
-# Or you can use a single loop and calculate the row and column
+for row in range(10):
+    for col in range(10):
+        number = row * 10 + col + 1
 
-# In the loop, calculate or increment the number
+        if number % 15 == 0:
+            display_text = "🐍"
+            color = "black"
+        elif number % 5 == 0:
+            display_text = "🦡"
+            color = "black"
+        elif number % 3 == 0:
+            display_text = "🍄"
+            color = "black"
+        else:
+            display_text = str(number)
+            digit_sum = sum(int(digit) for digit in display_text)
+            color = "blue" if digit_sum % 2 == 0 else "red"
 
-# Use % determining the display, using FizzBuzz rules
-
-# If you are displaying a number, calculate the sum of the digits and determine the color
-
-# Call Text(app, text='...', grid=[col, row], color=...) to display something. 
+        Text(app, text=display_text, grid=[col, row], color=color)
 
 app.display()

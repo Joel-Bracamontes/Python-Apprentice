@@ -13,30 +13,62 @@ Ask the user for three things:
    numbers and display the result.
 
 If the user enters an unknown operation, display an error message. ( use
-messagebox.showerror() 
+messagebox.showerror() )
 
 For the number, you can ask for a float or an integer with
 simpledialog.askfloat() or simpledialog.askinteger(), and for the math operation
 you can ask for a string with simpledialog.askstring().
 """
-number1 = 111
-number2 = 4
-operation = "111/4"
 
-# Import the required modules
+if __name__ == "__main__":
+    import tkinter as tk
+    from tkinter import simpledialog, messagebox
 
-# Create a window object
+    root = tk.Tk()
+    root.withdraw()
 
-# Hide the window, hint: use the withdraw method
+    number1 = simpledialog.askfloat("First Number", "Enter the first number:")
+    if number1 is None:
+        messagebox.showinfo("Info", "No first number entered.")
+        root.destroy()
+        raise SystemExit
 
-# Ask the user for the first number   
+    number2 = simpledialog.askfloat("Second Number", "Enter the second number:")
+    if number2 is None:
+        messagebox.showinfo("Info", "No second number entered.")
+        root.destroy()
+        raise SystemExit
 
-# Ask the user for the second number
+    operation = simpledialog.askstring(
+        "Operation",
+        "Enter the math operation (add, subtract, multiply, divide, +, -, *, /):"
+    )
+    if operation is None:
+        messagebox.showinfo("Info", "No operation entered.")
+        root.destroy()
+        raise SystemExit
 
-# Ask the user for the math operation
+    operation = operation.strip().lower()
 
-# Use if-elif-else statements to provide the desired math operation on the numbers and display the result.
+    if operation in ("add", "+", "plus"):
+        result = number1 + number2
+        messagebox.showinfo("Result", f"{number1} + {number2} = {result}")
+    elif operation in ("subtract", "-", "minus"):
+        result = number1 - number2
+        messagebox.showinfo("Result", f"{number1} - {number2} = {result}")
+    elif operation in ("multiply", "*", "times"):
+        result = number1 * number2
+        messagebox.showinfo("Result", f"{number1} × {number2} = {result}")
+    elif operation in ("divide", "/", "over"):
+        if number2 == 0:
+            messagebox.showerror("Error", "Cannot divide by zero.")
+        else:
+            result = number1 / number2
+            messagebox.showinfo("Result", f"{number1} / {number2} = {result}")
+    else:
+        messagebox.showerror(
+            "Error",
+            f"Unknown operation: '{operation}'. Please enter add, subtract, multiply, divide, +, -, *, or /."
+        )
 
-# If the user enters an unknown operation, display an error message. ( use messagebox.showerror()
-
-# Keep the window open
+    root.mainloop()
