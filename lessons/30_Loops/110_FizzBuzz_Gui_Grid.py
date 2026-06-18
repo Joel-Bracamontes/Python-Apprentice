@@ -48,7 +48,7 @@ for row in range(10):
         else:
             display_text = str(number)
             digit_sum = sum(int(digit) for digit in display_text)
-            color = "blue" if digit_sum % 2 == 0 else "red"
+            color = "black" if digit_sum % 2 == 0 else "white"
 
         Text(app, text=display_text, grid=[col, row], color=color)
 

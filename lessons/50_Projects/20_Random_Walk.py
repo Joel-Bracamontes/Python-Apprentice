@@ -23,6 +23,5 @@ for i in range(1):
     MJ.forward(100)
     MJ.left(80)
     MJ.forward(43)
-    MJ.done
     
     turtle.exitonclick()
