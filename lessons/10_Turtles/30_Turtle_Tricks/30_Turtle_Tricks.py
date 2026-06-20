@@ -19,9 +19,7 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 tina.goto(0,100)
 tina.begin_fill()
 tina.fillcolor("green")
-for i in range(10):
-    tina.forward(50)
-    tina.left(36)
+tina.circle(50)
 tina.end_fill()
 
 tina.goto(0,50)

@@ -43,17 +43,17 @@ window.withdraw() # Hide the window; we just want to see pop ups
 # Try to write your program so you only need to use one messagebox.showinfo() function.
 age = simpledialog.askinteger("Your Age", "How old are you?")
 if age <= 1:
-    messagebox.showinfo('What you are', "You are a baby.")
+    messagebox.showinfo('What you are', "Hello...WAIT, HOW YOU ANSWER IF YOU ARE A BABY?!")
 elif age <= 3:
-    messagebox.showinfo('What you are', "You are a toddler.")
+    messagebox.showinfo('What you are', "Hey, You are a toddler, but i dont know you answer.")
 elif age <= 10:
-    messagebox.showinfo('What you are', "You are a child.")
+    messagebox.showinfo('What you are', "FINALLY NORMAL! You are a child.")
 elif age <= 13:
-    messagebox.showinfo('What you are', "You are a Pre-teen.")
+    messagebox.showinfo('What you are', "OH, You are a Pre-teen.")
 elif age <= 19:
-    messagebox.showinfo('What you are', "You are a teen.")
+    messagebox.showinfo('What you are', "ok! You are a teen.")
 elif age <= 59:
-    messagebox.showinfo('What you are', "You are an adult.")
+    messagebox.showinfo('What you are', "ConGRATULATIONS! You are an adult, now you can do anything!")
 else:
-    messagebox.showinfo('What you are', "You are a senior.")
+    messagebox.showinfo('What you are', "Thanks Joel, It was a good life, senior =) Goodbye.")
     window.mainloop()  # Keeps the window open

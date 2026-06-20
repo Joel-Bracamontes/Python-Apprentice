@@ -58,7 +58,7 @@ tina.goto(-50, -150)
 tina.forward(20)                        # Move tina forward by 20
 tina.left(90)                           # Turn tina left by 90 degrees
 tina.forward(20)                        # Move tina forward by 20
-tina.write("Why, hello there!")         # Write the message "Why, hello there!"
+tina.write("Hello there!")         # Write the message "Why, hello there!"
 tina.backward(20)                       # Move tina backward by 20
 
 turtle.exitonclick()                    # Close the window when we click on it  
