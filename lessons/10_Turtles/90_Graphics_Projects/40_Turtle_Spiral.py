@@ -25,6 +25,7 @@ myTurtle.speed(0)
 # Set your turtle's color
 myTurtle.color("red")
 
+
 # Use a loop to repeat the code below 50 times
 for i in range(10000):
 

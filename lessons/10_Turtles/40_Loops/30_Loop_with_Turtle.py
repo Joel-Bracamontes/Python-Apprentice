@@ -12,7 +12,7 @@ tina.shape('turtle')                    # Set the shape of the turtle to a turtl
 
 tina.goto(-200,-200)
 tina.begin_fill()
-tina.fillcolor("red")
+tina.fillcolor("orange")
 for i in range(10):
     tina.pencolor("red")
     tina.forward(50)
@@ -21,7 +21,7 @@ tina.end_fill()
 
 tina.goto(150,-200)
 tina.begin_fill()
-tina.fillcolor("blue")
+tina.fillcolor("cyan")
 for i in range(10):
     tina.pencolor("blue")
     tina.forward(50)
@@ -30,7 +30,7 @@ tina.end_fill()
 
 tina.goto(150,125)
 tina.begin_fill()
-tina.fillcolor("yellow")
+tina.fillcolor("gold")
 for i in range(10):
     tina.pencolor("yellow")
     tina.forward(50)
@@ -39,7 +39,7 @@ tina.end_fill()
 
 tina.goto(-200,125)
 tina.begin_fill()
-tina.fillcolor("green")
+tina.fillcolor("pink")
 for i in range(10):
     tina.pencolor("green")
     tina.forward(50)
@@ -48,7 +48,7 @@ tina.end_fill()
 
 tina.goto(0,0)
 tina.begin_fill()
-tina.fillcolor("black")
+tina.fillcolor("white")
 for i in range(10):
     tina.pencolor("black")
     tina.forward(40)

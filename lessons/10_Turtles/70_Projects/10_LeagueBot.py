@@ -11,7 +11,7 @@ Write your own turtle program! Here is what your program should do
 
 import turtle as turtle
 import turtle
-from PIL import Image
+from import Image
 from pathlib import Path
 
 def resize_gif(image_path, scale=0.5):
