@@ -13,12 +13,12 @@ import turtle                          # Tell Python we want to work with the tu
 turtle.setup(600,600,0,0)               # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(200000)                           # Make the turtle move as fast, but not too fast. 
+tina.speed(999999999)                           # Make the turtle move as fast, but not too fast. 
 
-sides = 12
+sides = 5
 angle = 360 / sides
 
-for i in range(200):
+for i in range(600):
     if i == 100:
         tina.width(2)
     if i == 200:

@@ -39,6 +39,8 @@ def ask_integer(prompt):
             return int(input(prompt))
         except ValueError:
             print("Please enter a valid number!")
+        except EOFError:
+            return 0
 
 # Pick the initial random number
 n = random.randint(1, 100)
@@ -49,12 +51,12 @@ while n % 7 == 0:
 while True:
     guess = ask_integer("Guess a number between 1 and 100: ")
 
-    if guess % 7 == 0:
-        print("i dont know if thats right")
-        n = random.randint(1, 100)
-        while n % 7 == 0:
-            n = random.randint(1, 100)
-        continue
+    # if guess % 7 == 0:
+    #     print("that is a very bad number, starting over")
+    #     n = random.randint(1, 100)
+    #     while n % 7 == 0:
+    #         n = random.randint(1, 100)
+    #     continue
 
     if guess > n:
         print("Too high")
