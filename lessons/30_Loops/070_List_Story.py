@@ -5,10 +5,8 @@ Use indexing to get words from the list, then
 append them to the story
 """
 
-words = ['Once', '👦', 'upon', '🐕', 'park', 'met', 'with', 'a', 'the', 
-    'time', 'to', 'who', '🐈', '👧', 'and', 'went', 'had', 'play', '⚽.', 'they']
-
-story = ['Once', 'upon', 'a', 'time', '👦', 'met', 'a', '🐕', 'in', 'the', 'park.',]
+words = ['In', 'a', 'big', 'kingdom', ',', 'there', 'was', 'a', 'castle', ',', 'where', 'Mario', 'and', 'Luigi', 'lived', 'with', 'their', 'friends', ',', 'Yoshi', 'and', 'Princess', 'Peach']
+story = ['In', 'a', 'big', 'kingdom', ',', 'there', 'was', 'a', 'castle', ',', 'where', 'Mario', 'and', 'Luigi', 'lived', 'with', 'their', 'friends', ',', 'Yoshi', 'and', 'Princess', 'Peach']
 
 # Create a story using the words in the list
 
