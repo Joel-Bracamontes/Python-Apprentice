@@ -15,30 +15,10 @@ tina = turtle.Turtle()                  # Create a turtle named tina
 # Make each side of the triangle a different color with 
 # tina.pencolor()
 
-tina.left (180)
-tina.forward (40)
-tina.right(45)
-tina.forward(90)
-tina.left(35)
-tina.forward(50)
-tina.left(90)
-tina.forward(25)
-tina.circle(25,100)
-tina.right(100)
-tina.forward(25)
-tina.left(180)
-tina.forward(85)
-tina.left(180)
-tina.forward(13)
-tina.right(90)
-tina.circle(25,180)
-tina.left(90)
-tina.forward(10)
-tina.right(90)
-tina.forward(15)
-tina.left(90)
-tina.forward(30)
-tina.left(90)
-tina.forward(15)
-tina.hideturtle()
+tina.forward(100)                     # Move tina forward 100 pixels
+tina.left(120)                        # Turn tina left 120 degrees
+tina.forward(100)                     # Move tina forward 100 pixels
+tina.left(120)                        # Turn tina left 120 degrees
+tina.forward(100)                     # Move tina forward 100 pixels
+tina.left(360)                        # Turn tina left 120 degrees
 turtle.exitonclick()                    # Close the window when we click on it

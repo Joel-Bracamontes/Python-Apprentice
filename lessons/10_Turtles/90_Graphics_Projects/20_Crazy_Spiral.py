@@ -15,6 +15,7 @@ def getNextColor():
 
 def make_a_shape(t):
     """Make a shape with turtle t using a short pattern."""
+    t.speed(9999999999999999999)
     t.pencolor(getNextColor())
     t.forward(50)
     t.left(90)
@@ -33,7 +34,7 @@ s.shape("turtle")
 s.speed(0)
 s.width(2)
 
-for i in range(120):
+for i in range(999999999999999999999999999999999999999999999):
     make_a_shape(s)
     s.forward(i)
     s.left(15)

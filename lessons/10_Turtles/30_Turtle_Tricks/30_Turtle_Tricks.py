@@ -22,25 +22,25 @@ tina.fillcolor("green")
 tina.circle(50)
 tina.end_fill()
 
-tina.goto(0,50)
+tina.goto(0,0)
 tina.begin_fill()
 tina.fillcolor("red")
 tina.circle(50)
 tina.end_fill()
 
-tina.goto(0,0)
+tina.goto(0,-100)
 tina.begin_fill()
 tina.fillcolor("blue")
 tina.circle(50)
 tina.end_fill()
 
-tina.goto(0,-50)
+tina.goto(0,-200)
 tina.begin_fill()
 tina.fillcolor("yellow")
 tina.circle(50)
 tina.end_fill()
 
-tina.goto(0,-150)
+tina.goto(0,-250)
 
 
 turtle.exitonclick()                    # Close the window when we click on it

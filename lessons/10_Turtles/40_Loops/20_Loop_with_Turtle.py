@@ -10,11 +10,9 @@ turtle.setup(600,600,0,0)               # Set the size of the window
 
 t = turtle.Turtle()                  # Create a turtle named tina
 
-t.goto(50, 0)
-t.goto(65,50)
-t.goto(25,100)
-t.goto(-15,50)
-t.goto(0,0)
+for i in range(4):                       # Repeat the following four times
+    t.forward(100)                     # Move tina forward by the forward distance
+    t.left(90)                         # Turn tina left by the left turn
     
 
 # Move tina forward by the forward distance
