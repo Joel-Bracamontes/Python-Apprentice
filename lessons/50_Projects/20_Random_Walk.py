@@ -11,6 +11,8 @@ MJ = turtle.Turtle()
 MJ.shape('turtle')
 MJ.speed(2)                    # Set the shape of the turtle to a turtle
 
+#do Michael Jackson dance move with turtle graphics. The following code will create a simple representation of Michael Jackson's dance moves using turtle graphics.
+
 for i in range(1):
     MJ.right(180)
     MJ.forward(40)
